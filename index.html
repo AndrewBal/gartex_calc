@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calc</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+</head>
+<body>
+	<section class="price-section">
+		<div class="container">
+			<h2 class="title">Цены на противоугонные цепи GARTEX</h2>
+			<p class="title-sub">Для покупки 	 выберите диаметр цепи, длину и тип замка.</p>
+		<div class="calc-content">
+			<div class="image-container">
+				<div class="img-block">
+					<img id="model-image" src="img/GartexZ1-001.png" alt="">
+				</div>
+			</div>
+				<div class="calc-container">
+					<div class="form-group diameter-choice">
+						<label for="diameter">Выберите диаметр цепи:</label>
+						<select id="diameter" class="form-control">
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="8">8</option>
+						</select>
+					</div>
+					<div class=" form-group length-choice">
+						<label for="length">Выберите длину цепи:</label>
+						<select id="length" class="form-control">
+							<option  value="800">800 мм</option>
+							<option value="1000">1000 мм</option>
+							<option value="1200">1200 мм</option>
+							<option value="1500">1500 мм</option>
+							<option value="2000">2000 мм</option>
+						</select>
+					</div>
+					<div class="type-choice">
+						<p>Выберите тип замка:</p>
+						<form id="select-type" action="">
+							<div class="form-check">
+								<input checked class="form-check-input" id="type-lock-1" type="radio" name="lock">
+								<label class="form-check-label" for="type-lock-1"><img id="001" class="" src="img/001.png" alt=""></label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" id="type-lock-2" type="radio" name="lock">
+								<label class="form-check-label" for="type-lock-2"><img id="002" src="img/002.png" alt=""></label>
+							</div>
+							<div class="form-check">
+								<input  class="form-check-input" id="type-lock-3" type="radio" name="lock">
+								<label class="form-check-label" for="type-lock-3"><img  id="003" src="img/003.png" alt=""></label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" id="type-lock-4" type="radio" disabled name="lock">
+								<label class="form-check-label" for="type-lock-4"><img class="filter"   id="004"src="img/004.png" alt=""></label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" id="type-lock-5" type="radio" name="lock">
+								<label class="form-check-label" for="type-lock-5">Без замка</label>
+							</div>
+						</form>
+					</div>
+					<div class="result-price">
+						<span id="total-price">0</span><span>грн.</span>
+					</div>
+					<div class="model-description">
+						<div class="model-description__dm">
+							<span>Цепь</span><span id="diameter-chain"></span><span> мм</span>
+						</div>
+						<div class="model-description__lng">
+							<span>Длина</span><span id="length-chain"></span><span> мм</span>
+							<span>/</span>
+							<span>Масса</span><span id="weight-chain"></span><span> кг</span>
+						</div>
+						<div class="model-description__material">
+							<span id="lock-text">Замок</span><span id="material-lock"></span>
+						</div>
+						<div class="model-description__secur">
+							<span>Уровень защиты</span><span id="protection-level"></span>
+						</div>
+						<div class="model-description__img">
+							<img src="img/descript__img.png" alt="description__img">
+						</div>
+					</div>
+					<div class="calc_btn">
+						<a href="#" class="btn">Купить</a>
+					</div>
+				</div>
+			<div class="calc-container">
+				<h3>U-lock</h3>
+				<div class="form-group model-choice">
+					<label for="ulock">Выберите модель:</label>
+					<select id="ulock" class="form-control">
+						<option value="1">U-lock</option>
+						<option value="2">U-lock с креплением</option>
+					</select>
+				</div>
+				<div class="result-price">
+					<span id="ulock-price">498</span><span>грн.</span>
+				</div>
+				<div class="model-description">
+					<div class="ulock-thickness">
+						<span>Толщина прутка 16 мм</span>
+					</div>
+					<div class="ulock-size">
+						<span>Размеры 14X80X143 мм</span>
+					</div>
+					<div class="ulock-weight">
+						<span>Масса 1 кг</span>
+					</div>
+					<div class="ulock-material">
+						<span>Замок стальной</span>
+					</div>
+					<div class="ulock-secur">
+						<span>Уровень защиты №8</span>
+					</div>
+
+				</div>
+				<div class="model-description__img">
+					<img src="img/descript__img.png" alt="description__img">
+				</div>
+				<div class="calc_btn">
+					<a href="#" class="btn">Купить</a>
+				</div>
+			</div>
+			<div class="image-container">
+				<div class="img-block">
+					<img id="ulock-image" src="img/U-lock.png" alt="">
+				</div>
+			</div>
+			</div>
+
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="models.json"></script>
+	<script src="script.js"></script>
+</body>
+</html>
+
